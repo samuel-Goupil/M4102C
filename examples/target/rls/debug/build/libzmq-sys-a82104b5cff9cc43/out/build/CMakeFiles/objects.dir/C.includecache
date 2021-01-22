@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/iut/.cargo/registry/src/github.com-1ecc6299db9ec823/zeromq-src-0.1.10+4.3.2/vendor/src/tweetnacl.c
+platform.hpp
+/home/iut/.cargo/registry/src/github.com-1ecc6299db9ec823/zeromq-src-0.1.10+4.3.2/vendor/src/platform.hpp
+tweetnacl.h
+/home/iut/.cargo/registry/src/github.com-1ecc6299db9ec823/zeromq-src-0.1.10+4.3.2/vendor/src/tweetnacl.h
+windows.h
+-
+wincrypt.h
+-
+unistd.h
+-
+assert.h
+-
+sys/random.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+
+/home/iut/.cargo/registry/src/github.com-1ecc6299db9ec823/zeromq-src-0.1.10+4.3.2/vendor/src/tweetnacl.h
+
+platform.hpp
+

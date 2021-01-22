@@ -1,0 +1,12 @@
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/lib/pkgconfig/libzmq.pc
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/lib/libzmq.a
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/include/zmq.h
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/include/zmq_utils.h
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/AUTHORS.txt
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.txt
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.LESSER.txt
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/NEWS.txt
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQTargets.cmake
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQTargets-debug.cmake
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfig.cmake
+/home/iut/M4102C/examples/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfigVersion.cmake
