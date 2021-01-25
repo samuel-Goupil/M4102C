@@ -1,132 +1,27 @@
 cargo:rerun-if-changed=build.rs
 cargo:rerun-if-env-changed=PROFILE
 running: "cmake" "/home/iut/.cargo/registry/src/github.com-1ecc6299db9ec823/zeromq-src-0.1.10+4.3.2/vendor" "-DCMAKE_INSTALL_LIBDIR=lib" "-DCMAKE_C_STANDARD=99" "-DZMQ_BUILD_TESTS=OFF" "-DENABLE_DRAFTS=ON" "-DENABLE_CURVE=ON" "-DCMAKE_BUILD_TYPE=Debug" "-DWITH_PERF_TOOL=OFF" "-DBUILD_SHARED=OFF" "-DBUILD_STATIC=ON" "-DWITH_LIBSODIUM=OFF" "-DCMAKE_INSTALL_PREFIX=/home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_ASM_COMPILER=/usr/bin/cc"
--- The C compiler identification is GNU 10.1.0
--- The CXX compiler identification is GNU 10.1.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
--- Looking for pthread_create in pthreads
--- Looking for pthread_create in pthreads - not found
--- Looking for pthread_create in pthread
--- Looking for pthread_create in pthread - found
--- Found Threads: TRUE  
 -- Detected ZMQ Version - 4.3.2
--- Performing Test COMPILER_SUPPORTS_CXX11
--- Performing Test COMPILER_SUPPORTS_CXX11 - Success
--- Performing Test COMPILER_SUPPORTS_C11
--- Performing Test COMPILER_SUPPORTS_C11 - Success
--- Performing Test CXX_HAS_TAUT_WARNING
--- Performing Test CXX_HAS_TAUT_WARNING - Success
--- Performing Test CC_HAS_TAUT_WARNING
--- Performing Test CC_HAS_TAUT_WARNING - Success
 -- Using tweetnacl for CURVE security
 -- Using radix tree implementation to manage subscriptions
--- Looking for kqueue
--- Looking for kqueue - not found
--- Looking for epoll_create
--- Looking for epoll_create - found
--- Looking for epoll_create1
--- Looking for epoll_create1 - found
 -- Using polling method in I/O threads: epoll
 -- Using polling method in zmq_poll(er)_* API: poll
 -- Using 64 bytes alignment for lock-free data structures
--- Looking for include file windows.h
--- Looking for include file windows.h - not found
--- Looking for include file condition_variable
--- Looking for include file condition_variable - found
 -- Using condition_variable_t implementation: stl11
--- Looking for include file ifaddrs.h
--- Looking for include file ifaddrs.h - found
--- Looking for include file sys/uio.h
--- Looking for include file sys/uio.h - found
--- Looking for include file sys/eventfd.h
--- Looking for include file sys/eventfd.h - found
 -- Checking whether EFD_CLOEXEC is supported
--- Performing Test ZMQ_HAVE_EVENTFD_CLOEXEC
--- Performing Test ZMQ_HAVE_EVENTFD_CLOEXEC - Success
--- Looking for SO_PEERCRED
--- Looking for SO_PEERCRED - found
--- Looking for LOCAL_PEERCRED
--- Looking for LOCAL_PEERCRED - not found
--- Looking for clock_gettime
--- Looking for clock_gettime - found
--- Looking for fork
--- Looking for fork - found
--- Looking for gethrtimei
--- Looking for gethrtimei - not found
--- Looking for mkdtemp
--- Looking for mkdtemp - found
--- Looking for accept4
--- Looking for accept4 - found
--- Looking for strnlen
--- Looking for strnlen - found
--- Performing Test HAVE_FLAG_-Wall
--- Performing Test HAVE_FLAG_-Wall - Failed
--- Performing Test HAVE_FLAG_-Wextra
--- Performing Test HAVE_FLAG_-Wextra - Failed
--- Performing Test HAVE_FLAG_-Wno-long-long
--- Performing Test HAVE_FLAG_-Wno-long-long - Failed
--- Performing Test HAVE_FLAG_-Wno-uninitialized
--- Performing Test HAVE_FLAG_-Wno-uninitialized - Failed
--- Performing Test HAVE_FLAG_-pedantic
--- Performing Test HAVE_FLAG_-pedantic - Failed
 -- Checking whether noexcept is supported
--- Performing Test ZMQ_HAVE_NOEXCEPT
--- Performing Test ZMQ_HAVE_NOEXCEPT - Success
 -- Checking whether SOCK_CLOEXEC is supported
--- Performing Test ZMQ_HAVE_SOCK_CLOEXEC
--- Performing Test ZMQ_HAVE_SOCK_CLOEXEC - Success
 -- Checking whether O_CLOEXEC is supported
--- Performing Test ZMQ_HAVE_O_CLOEXEC
--- Performing Test ZMQ_HAVE_O_CLOEXEC - Success
 -- Checking whether SO_BINDTODEVICE is supported
--- Performing Test ZMQ_HAVE_SO_BINDTODEVICE
--- Performing Test ZMQ_HAVE_SO_BINDTODEVICE - Success
 -- Checking whether SO_KEEPALIVE is supported
--- Performing Test ZMQ_HAVE_SO_KEEPALIVE
--- Performing Test ZMQ_HAVE_SO_KEEPALIVE - Success
 -- Checking whether TCP_KEEPCNT is supported
--- Performing Test ZMQ_HAVE_TCP_KEEPCNT
--- Performing Test ZMQ_HAVE_TCP_KEEPCNT - Success
 -- Checking whether TCP_KEEPIDLE is supported
--- Performing Test ZMQ_HAVE_TCP_KEEPIDLE
--- Performing Test ZMQ_HAVE_TCP_KEEPIDLE - Success
 -- Checking whether TCP_KEEPINTVL is supported
--- Performing Test ZMQ_HAVE_TCP_KEEPINTVL
--- Performing Test ZMQ_HAVE_TCP_KEEPINTVL - Success
 -- Checking whether TCP_KEEPALIVE is supported
--- Performing Test ZMQ_HAVE_TCP_KEEPALIVE
--- Performing Test ZMQ_HAVE_TCP_KEEPALIVE - Failed
 -- Checking whether TIPC is supported
--- Performing Test ZMQ_HAVE_TIPC
--- Performing Test ZMQ_HAVE_TIPC - Success
 -- Checking pthread_setname signature
--- Performing Test ZMQ_HAVE_PTHREAD_SETNAME_1
--- Performing Test ZMQ_HAVE_PTHREAD_SETNAME_1 - Failed
--- Performing Test ZMQ_HAVE_PTHREAD_SETNAME_2
--- Performing Test ZMQ_HAVE_PTHREAD_SETNAME_2 - Success
--- Performing Test ZMQ_HAVE_PTHREAD_SETNAME_3
--- Performing Test ZMQ_HAVE_PTHREAD_SETNAME_3 - Failed
--- Performing Test ZMQ_HAVE_PTHREAD_SET_NAME
--- Performing Test ZMQ_HAVE_PTHREAD_SET_NAME - Failed
 -- Checking pthread_setaffinity signature
--- Performing Test ZMQ_HAVE_PTHREAD_SETAFFINITY
--- Performing Test ZMQ_HAVE_PTHREAD_SETAFFINITY - Success
 -- Checking whether getrandom is supported
--- Performing Test ZMQ_HAVE_GETRANDOM
--- Performing Test ZMQ_HAVE_GETRANDOM - Success
 -- Could NOT find AsciiDoc (missing: ASCIIDOC_EXECUTABLE) 
 -- Configuring done
 -- Generating done
@@ -203,8 +98,8 @@ Scanning dependencies of target objects
 [ 66%] Building CXX object CMakeFiles/objects.dir/src/stream_engine.cpp.o
 [ 67%] Building CXX object CMakeFiles/objects.dir/src/sub.cpp.o
 [ 68%] Building CXX object CMakeFiles/objects.dir/src/tcp.cpp.o
-[ 69%] Building CXX object CMakeFiles/objects.dir/src/tcp_address.cpp.o
-[ 70%] Building CXX object CMakeFiles/objects.dir/src/tcp_connecter.cpp.o
+[ 69%] Building CXX object CMakeFiles/objects.dir/src/tcp_connecter.cpp.o
+[ 70%] Building CXX object CMakeFiles/objects.dir/src/tcp_address.cpp.o
 [ 71%] Building CXX object CMakeFiles/objects.dir/src/tcp_listener.cpp.o
 [ 72%] Building CXX object CMakeFiles/objects.dir/src/thread.cpp.o
 [ 73%] Building CXX object CMakeFiles/objects.dir/src/trie.cpp.o
@@ -234,23 +129,22 @@ Scanning dependencies of target objects
 [ 97%] Building CXX object CMakeFiles/objects.dir/src/tipc_connecter.cpp.o
 [ 98%] Building CXX object CMakeFiles/objects.dir/src/tipc_listener.cpp.o
 [ 98%] Built target objects
-Scanning dependencies of target libzmq-static
 [100%] Linking CXX static library lib/libzmq.a
 [100%] Built target libzmq-static
 Install the project...
 -- Install configuration: "Debug"
--- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/lib/pkgconfig/libzmq.pc
+-- Up-to-date: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/lib/pkgconfig/libzmq.pc
 -- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/lib/libzmq.a
 -- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/include/zmq.h
 -- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/include/zmq_utils.h
--- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/AUTHORS.txt
--- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.txt
--- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.LESSER.txt
--- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/NEWS.txt
--- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQTargets.cmake
+-- Up-to-date: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/AUTHORS.txt
+-- Up-to-date: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.txt
+-- Up-to-date: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.LESSER.txt
+-- Up-to-date: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/NEWS.txt
+-- Up-to-date: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQTargets.cmake
 -- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQTargets-debug.cmake
--- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfig.cmake
--- Installing: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfigVersion.cmake
+-- Up-to-date: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfig.cmake
+-- Up-to-date: /home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfigVersion.cmake
 cargo:root=/home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out
 cargo:rustc-link-search=native=/home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out/lib
 cargo:rustc-link-lib=static=zmq

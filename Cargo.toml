@@ -1,5 +1,5 @@
 [workspace]
 members=[
-    "examples"
+    "examples",
     "radio_chat"
 ]
