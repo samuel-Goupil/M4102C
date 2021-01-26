@@ -1,9 +1,10 @@
 use std::convert::TryInto;
 
-use libzmq::{prelude::*, DishBuilder,Client,  Group, TcpAddr};
+use libzmq::{prelude::*, ClientBuilder, DishBuilder,Client,  Group, TcpAddr};
 use structopt::StructOpt;
 use radio_chat::{self, Result};
 use radio_chat::ContentsMessage;
+use std::io::{self,prelude::*, BufReader};
 
 #[derive(StructOpt)]
 struct Options {
@@ -13,8 +14,13 @@ struct Options {
 
 
 
-fn main(){
+fn main()->Result<()>{
 
+    std::thread::spawn(move||
+        listen()
+    );
+    write();
+    Ok(())
 }
 
 fn listen()->Result<()>{
@@ -38,5 +44,20 @@ fn dispatch_line(line: &str, client: &Client)->Result<()>{
         recipients : recipients,
       payload : payload.to_string()
     };
+    let m=serde_json::to_string(&m);
+    client.send(m?)?;
+    Ok(())
+}
 
+fn write()->Result<()>{
+    let lines=BufReader::new(io::stdin()).lines();
+    let options=Options::from_args();
+    let endpoint:TcpAddr=format!("{}:{}", options.identity, radio_chat::SERVER_PORT).try_into()?;
+    let client=ClientBuilder::new().connect(endpoint).build()?;
+    for line in lines{
+
+        dispatch_line(&line?, &client)?;
+        
+    }
+    Ok(())
 }

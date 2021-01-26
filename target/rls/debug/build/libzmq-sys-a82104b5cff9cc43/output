@@ -59,8 +59,8 @@ Scanning dependencies of target objects
 [ 29%] Building CXX object CMakeFiles/objects.dir/src/mechanism_base.cpp.o
 [ 30%] Building CXX object CMakeFiles/objects.dir/src/metadata.cpp.o
 [ 31%] Building CXX object CMakeFiles/objects.dir/src/msg.cpp.o
-[ 31%] Building CXX object CMakeFiles/objects.dir/src/mtrie.cpp.o
 [ 32%] Building CXX object CMakeFiles/objects.dir/src/norm_engine.cpp.o
+[ 32%] Building CXX object CMakeFiles/objects.dir/src/mtrie.cpp.o
 [ 33%] Building CXX object CMakeFiles/objects.dir/src/object.cpp.o
 [ 34%] Building CXX object CMakeFiles/objects.dir/src/options.cpp.o
 [ 35%] Building CXX object CMakeFiles/objects.dir/src/own.cpp.o
@@ -102,8 +102,8 @@ Scanning dependencies of target objects
 [ 70%] Building CXX object CMakeFiles/objects.dir/src/tcp_connecter.cpp.o
 [ 71%] Building CXX object CMakeFiles/objects.dir/src/tcp_listener.cpp.o
 [ 72%] Building CXX object CMakeFiles/objects.dir/src/thread.cpp.o
-[ 73%] Building CXX object CMakeFiles/objects.dir/src/radix_tree.cpp.o
-[ 74%] Building CXX object CMakeFiles/objects.dir/src/trie.cpp.o
+[ 73%] Building CXX object CMakeFiles/objects.dir/src/trie.cpp.o
+[ 74%] Building CXX object CMakeFiles/objects.dir/src/radix_tree.cpp.o
 [ 75%] Building CXX object CMakeFiles/objects.dir/src/v1_decoder.cpp.o
 [ 76%] Building CXX object CMakeFiles/objects.dir/src/v1_encoder.cpp.o
 [ 77%] Building CXX object CMakeFiles/objects.dir/src/v2_decoder.cpp.o
@@ -138,13 +138,13 @@ Install the project...
 -- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/include/zmq.h
 -- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/include/zmq_utils.h
 -- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/AUTHORS.txt
--- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.txt
--- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.LESSER.txt
--- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/NEWS.txt
+-- Up-to-date: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.txt
+-- Up-to-date: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/COPYING.LESSER.txt
+-- Up-to-date: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/zmq/NEWS.txt
 -- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQTargets.cmake
 -- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQTargets-debug.cmake
--- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfig.cmake
--- Installing: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfigVersion.cmake
+-- Up-to-date: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfig.cmake
+-- Up-to-date: /home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/share/cmake/ZeroMQ/ZeroMQConfigVersion.cmake
 cargo:root=/home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out
 cargo:rustc-link-search=native=/home/iut/M4102C/target/rls/debug/build/libzmq-sys-a82104b5cff9cc43/out/lib
 cargo:rustc-link-lib=static=zmq
