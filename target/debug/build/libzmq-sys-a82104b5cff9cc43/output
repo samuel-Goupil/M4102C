@@ -1,6 +1,18 @@
 cargo:rerun-if-changed=build.rs
 cargo:rerun-if-env-changed=PROFILE
 running: "cmake" "/home/iut/.cargo/registry/src/github.com-1ecc6299db9ec823/zeromq-src-0.1.10+4.3.2/vendor" "-DCMAKE_INSTALL_LIBDIR=lib" "-DCMAKE_C_STANDARD=99" "-DZMQ_BUILD_TESTS=OFF" "-DENABLE_DRAFTS=ON" "-DENABLE_CURVE=ON" "-DCMAKE_BUILD_TYPE=Debug" "-DWITH_PERF_TOOL=OFF" "-DBUILD_SHARED=OFF" "-DBUILD_STATIC=ON" "-DWITH_LIBSODIUM=OFF" "-DCMAKE_INSTALL_PREFIX=/home/iut/M4102C/target/debug/build/libzmq-sys-a82104b5cff9cc43/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_ASM_COMPILER=/usr/bin/cc"
+-- The C compiler identification is GNU 10.1.0
+-- The CXX compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Detected ZMQ Version - 4.3.2
 -- Using tweetnacl for CURVE security
 -- Using radix tree implementation to manage subscriptions
